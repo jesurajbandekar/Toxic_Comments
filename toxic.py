@@ -28,7 +28,7 @@ vocab_size = len(words) + 1
 
 model = Sequential()
 #Add embedding layer for word embedding
-e = Embedding(vocab_size, 300, weights=[embedd_mat], input_length=max_len, trainable=False)
+e = Embedding(vocab_size, 300, input_length=max_len, trainable=True)
 model.add(e)
 model.add(Bidirectional(LSTM(256, activation='relu',return_sequences=True)))
 model.add(GlobalMaxPool1D())
