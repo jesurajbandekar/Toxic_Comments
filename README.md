@@ -2,7 +2,7 @@
 
 This deep learning model classifies a comment into 6 different categories.
 
-1)toxic \n
+1)toxic 
 2)severe_toxic
 3)obscene
 4)threat
