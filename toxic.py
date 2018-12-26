@@ -33,7 +33,7 @@ model.add(e)
 model.add(Bidirectional(LSTM(256, activation='relu',return_sequences=True)))
 model.add(GlobalMaxPool1D())
 model.add(Dropout(0.4))
-model.add(Dense(64))
+model.add(Dense(64, activation='relu'))
 model.add(Dropout(0.5))
 model.add(Dense(6, activation='sigmoid'))
 
